@@ -1,0 +1,9 @@
+html {
+  height: 150%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  /* background: linear-gradient(#141e30, #243b55); */
+  background: #212121;
+}

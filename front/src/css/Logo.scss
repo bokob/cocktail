@@ -1,0 +1,166 @@
+html {
+  --cocktail1: #01c2fe;
+  --cocktail2: #febe00;
+  --cocktail3: #fe1f1d;
+  --cocktail-glass: #f9ede6;
+  --straw: #ffffff;
+  --straw-stripe: #0d5ec6;
+}
+body {
+  width: 100%;
+  // display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  min-height: 100vh;
+}
+
+#cocktail {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+/*COKTAIL*/
+#cocktailglass {
+  position: absolute;
+  width: 5.5em;
+  height: 11em;
+  bottom: -5px;
+  left: 50%;
+  transform: translate3d(-50%, -0.2em, 0em) perspective(20em) rotateX(45deg);
+  border-style: solid;
+  border-color: var(--cocktail-glass);
+  border-width: 0.2em 0.2em 0.8em 0.2em;
+  border-radius: 0.1em 0.1em 3em 3em;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    transparent 30%,
+    var(--cocktail1) 30%,
+    var(--cocktail1) 50%,
+    var(--cocktail2) 50%,
+    var(--cocktail2) 80%,
+    var(--cocktail3) 80%,
+    var(--cocktail3) 100%
+  );
+  box-shadow: 0em 0em 0.1em var(--cocktail-glass);
+  opacity: 0.9;
+}
+#glassfoot {
+  position: absolute;
+  bottom: 0;
+  transform: translate3d(-50%, 0em, 0em);
+  background-color: var(--cocktail-glass);
+  width: 3em;
+  height: 0.5em;
+  left: 50%;
+  border-radius: 1em 1em 0em 0em;
+}
+#straw {
+  position: absolute;
+  top: 0;
+  transform: rotate(-15deg);
+  background-color: var(--straw);
+  width: 0.4em;
+  height: 11em;
+  left: 40%;
+  &:before,
+  &:after {
+    display: block;
+    content: "";
+    height: 100%;
+    width: 0.1em;
+    background-color: var(--straw-stripe);
+    position: absolute;
+    top: 0;
+  }
+  &:before {
+    left: 0.03em;
+  }
+  &:after {
+    left: 0.24em;
+  }
+}
+#cocktailbubble {
+  div {
+    position: absolute;
+    background-color: var(--cocktail1);
+    width: 0.2em;
+    height: 0.2em;
+    border-radius: 50%;
+    bottom: 7.3em;
+    animation-name: cocktailbubble;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    &:nth-child(1) {
+      left: 4.3em;
+      animation-duration: 0.28s;
+    }
+    &:nth-child(2) {
+      left: 4.9em;
+      animation-duration: 0.32s;
+    }
+    &:nth-child(3) {
+      left: 5.3em;
+      animation-duration: 0.4s;
+    }
+    &:nth-child(4) {
+      left: 6.6em;
+      animation-duration: 0.37s;
+    }
+    &:nth-child(5) {
+      left: 7em;
+      animation-duration: 0.28s;
+    }
+    &:nth-child(6) {
+      left: 8em;
+      animation-duration: 0.35s;
+    }
+    &:nth-child(7) {
+      left: 6em;
+      animation-duration: 0.25s;
+    }
+    &:nth-child(8) {
+      left: 6.3em;
+      animation-duration: 0.38s;
+    }
+  }
+}
+#cocktaildetail {
+  div {
+    position: absolute;
+    left: 8.5em;
+    width: 0.2em;
+    background-color: var(--cocktail-glass);
+    border-radius: 3em;
+    transform: rotate(-8deg);
+
+    &:nth-child(1) {
+      height: 0.6em;
+      bottom: 8em;
+      left: 8.2em;
+    }
+    &:nth-child(2) {
+      height: 4.3em;
+      bottom: 3.4em;
+      left: 8.6em;
+    }
+  }
+}
+@keyframes cocktailbubble {
+  0% {
+    bottom: 7.3em;
+    opacity: 0.8;
+  }
+  100% {
+    bottom: 8.3em;
+    opacity: 0;
+  }
+}
+/*END OF COKTAIL*/
+
+/* Title */
+
+/* End of Title */

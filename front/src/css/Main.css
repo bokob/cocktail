@@ -1,0 +1,133 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 70px 350px 800px 100px;
+  color: white;
+}
+
+.item1 {
+  border: 2px solid white;
+  grid-column-start: 1;
+  grid-column-end: 10;
+}
+.item2 {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border: 2px solid white;
+}
+.item3 {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border: 2px solid white;
+  grid-column-start: 2;
+  grid-column-end: 9;
+}
+.item4 {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border: 2px solid white;
+}
+.item5 {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border: 2px solid white;
+}
+.item6 {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border: 2px solid white;
+  grid-column-start: 2;
+  grid-column-end: 9;
+}
+.item7 {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border: 2px solid white;
+}
+.item8 {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border: 2px solid white;
+}
+.item9 {
+  border: 2px solid white;
+  grid-column-start: 2;
+  grid-column-end: 9;
+}
+.item10 {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border: 2px solid white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 90px;
+  margin: 0px;
+  color: #f7c805;
+}
+
+/* h1 span:nth-child(1) {
+  color: #47a3d2;
+}
+
+h1 span:nth-child(2) {
+  color: #f11486;
+}
+
+h1 span:nth-child(3) {
+  color: #fbc22b;
+}
+h1 span:nth-child(4) {
+  color: #47a3d2;
+}
+h1 span:nth-child(5) {
+  color: #8ce33e;
+}
+h1 span:nth-child(6) {
+  color: #f11486;
+} */
+
+.dropdownmenu ul,
+.dropdownmenu li {
+  margin: 0;
+  padding: 0;
+}
+.dropdownmenu ul {
+  background: gray;
+  list-style: none;
+  width: 100%;
+}
+.dropdownmenu li {
+  float: right;
+  position: relative;
+  width: auto;
+  /* width: 20%; */
+}
+.dropdownmenu a {
+  margin: 0px;
+  background: #212121;
+  color: white;
+  display: block;
+  font: bold 12px/20px sans-serif;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.dropdownmenu li:hover a {
+  background: white;
+  color: #212121;
+}
